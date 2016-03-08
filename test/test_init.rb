@@ -13,9 +13,8 @@ puts RUBY_DESCRIPTION
 
 require_relative '../init.rb'
 
-require 'stream_metrics_telemetry'
+require 'stream_metrics_telemetry/controls'
 
 require 'test_bench'; TestBench.activate
-include TestBench::Assert::Error
 
 Telemetry::Logger::AdHoc.activate

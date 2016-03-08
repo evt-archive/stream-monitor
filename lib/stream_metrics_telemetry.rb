@@ -1,4 +1,3 @@
-require 'telemetry/logger'
+require 'metrics/stream/divergence'
 
-module StreamMetricsTelemetry
-end
+require 'stream_metrics_telemetry/settings'
