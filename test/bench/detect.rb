@@ -4,7 +4,7 @@ test "Streams are out of tolerance" do
   stream_name_1 = StreamMetricsTelemetry::Controls::Writer.write 1, 'stream_1'
   stream_name_2 = StreamMetricsTelemetry::Controls::Writer.write 1, 'stream_2'
 
-  detect = Divergence::Detect.(stream_name_1, stream_name_2) do |data, alert|
+  detect = Divergence::Detect.(stream_name_1, stream_name_2) do |data|
 
     test "The difference between timestamps of the last events of each stream" do
       assert(divergence.elapsed_milliseconds > 0)
