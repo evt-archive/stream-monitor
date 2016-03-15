@@ -1,4 +1,6 @@
 {
-  "frequency_milliseconds": 60000,
-  "tolerance_milliseconds": 60000
+  "divergence": {
+    "frequency_milliseconds": 60000,
+    "tolerance_milliseconds": 60000
+  }
 }
