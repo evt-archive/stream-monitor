@@ -7,4 +7,4 @@ unless libraries_dir.nil?
   $LOAD_PATH.unshift libraries_dir unless $LOAD_PATH.include?(libraries_dir)
 end
 
-require 'stream_metrics_telemetry'
+require 'stream_monitor'

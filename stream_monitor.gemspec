@@ -1,8 +1,8 @@
 # -*- encoding: utf-8 -*-
 Gem::Specification.new do |s|
-  s.name = 'stream_metrics_telemetry'
+  s.name = 'stream_monitor'
   s.version = '0.0.0.0'
-  s.summary = 'Measurement of divergence in time of the heads of streams'
+  s.summary = 'Check and alert on stream metrics'
   s.description = ' '
 
   s.authors = ['Obsidian Software, Inc']
