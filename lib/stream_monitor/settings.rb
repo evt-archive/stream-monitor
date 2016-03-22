@@ -1,11 +1,11 @@
-module StreamMetricsTelemetry
+module StreamMonitor
   class Settings < ::Settings
     def self.instance
       @instance ||= build
     end
 
     def self.data_source
-      'settings/stream_metrics_telemetry.json'
+      'settings/stream_monitor.json'
     end
 
     def self.set(receiver)

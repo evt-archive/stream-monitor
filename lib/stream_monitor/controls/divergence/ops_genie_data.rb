@@ -1,9 +1,9 @@
-module StreamMetricsTelemetry
+module StreamMonitor
   module Controls
     module Divergence
-      module Tolerance
+      module OpsGenieData
         def self.example
-          Time.unit
+          
         end
       end
     end

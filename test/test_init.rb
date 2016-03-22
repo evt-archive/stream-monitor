@@ -13,7 +13,7 @@ puts RUBY_DESCRIPTION
 
 require_relative '../init.rb'
 
-require 'stream_metrics_telemetry/controls'
+require 'stream_monitor/controls'
 
 require 'test_bench'; TestBench.activate
 

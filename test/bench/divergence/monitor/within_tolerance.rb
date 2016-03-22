@@ -1,1 +1,1 @@
-require_relative '../bench_init'
+require_relative '../../bench_init'

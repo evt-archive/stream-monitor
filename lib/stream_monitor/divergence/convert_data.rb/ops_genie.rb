@@ -1,4 +1,4 @@
-module StreamMetricsTelemetry
+module StreamMonitor
   module Divergence
     module ConvertData
       class OpsGenie

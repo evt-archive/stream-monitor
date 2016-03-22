@@ -1,4 +1,4 @@
-module StreamMetricsTelemetry
+module StreamMonitor
   module Controls
     module Divergence
       MeasurementData = Metrics::Stream::Divergence::Controls::Data

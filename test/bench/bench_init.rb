@@ -1,3 +1,3 @@
 require_relative '../test_init'
 
-include StreamMetricsTelemetry
+include StreamMonitor

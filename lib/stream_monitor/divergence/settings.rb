@@ -1,6 +1,6 @@
-module StreamMetricsTelemetry
+module StreamMonitor
   module Divergence
-    class Settings < StreamMetricsTelemetry::Settings
+    class Settings < StreamMonitor::Settings
       def self.build
         instance = super
 
