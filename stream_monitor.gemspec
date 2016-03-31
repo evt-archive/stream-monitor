@@ -16,6 +16,7 @@ Gem::Specification.new do |s|
   s.required_ruby_version = '>= 2.2.3'
 
   s.add_runtime_dependency 'metrics-stream-divergence'
+  s.add_runtime_dependency 'ops_genie_client'
 
   s.add_development_dependency 'test_bench'
 end
