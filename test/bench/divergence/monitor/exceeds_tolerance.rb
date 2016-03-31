@@ -1,17 +1,21 @@
-# require_relative '../bench_init'
+require_relative '../../bench_init'
 
-# context "Stream divergence exceeds tolerance" do
-#   control_data = Controls::Divergence::OpsGenieData.example
+context "Stream divergence exceeds tolerance" do
+  test "Alert is sent"
+end
 
-#   sink = substitute_post.sink
+__END__
 
-#   monitor = Monitor.new
+control_data = Controls::Divergence::OpsGenieData.example
 
-#   monitor.measure.data = Controls::Divergence::MeasurementData::Tolerance::Exceeded.example
+sink = substitute_post.sink
 
-#   test "Alert is sent" do
-#     assert sink do
-#       posted? { |data| data == control_data }
-#     end
-#   end  
-# end
+monitor = Monitor.new
+
+monitor.measure.data = Controls::Divergence::MeasurementData::Tolerance::Exceeded.example
+
+test "Alert is sent" do
+  assert sink do
+    posted? { |data| data == control_data }
+  end
+end

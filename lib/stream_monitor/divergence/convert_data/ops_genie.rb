@@ -12,8 +12,7 @@ module StreamMonitor
         def self.build(measurement_data)
         end
 
-        def call()
-          # convert measurement data to ops_genie data
+        def call
         end
       end
     end
