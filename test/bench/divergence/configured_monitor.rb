@@ -1,10 +1,12 @@
 require_relative '../bench_init'
 
 context "Configured Monitor" do
-  settings = Divergence::Settings.build
+  source = StreamMonitor::Controls::Source.example
+
+  settings = StreamMonitor::Divergence::Settings.build
   data = settings.get
 
-  monitor = Divergence::Monitor.new
+  monitor = StreamMonitor::Divergence::Monitor.new source
 
   settings.set monitor
 
